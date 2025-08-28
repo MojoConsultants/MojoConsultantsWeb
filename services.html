@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services — Mojo Consultants</title>
+<link rel="preload" as="image" href="Logo.png" />
+<link rel="stylesheet" href="styles.css" />
+<meta name="theme-color" content="#0b5aa3" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Mojo Consultants home">
+      <img src="Logo.png" alt="Mojo Consultants logo" />
+      <span class="name">MOJO CONSULTANTS</span>
+    </a>
+    
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="cta">Services</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="contract.html">Contract</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+
+<section class="container">
+  <h1>Our Services</h1>
+  <p class="kicker">Practical solutions to launch and grow your digital presence.</p>
+  <div class="grid cols-2">
+    <div class="card">
+      <h2>Website Design &amp; Development</h2>
+      <p>Custom, responsive sites (one‑page or multi‑page) crafted for clarity, speed, and accessibility. We set up hosting, domains, and content management so your team can update easily.</p>
+      <ul>
+        <li>Discovery &amp; site architecture</li>
+        <li>Design system &amp; brand alignment</li>
+        <li>Implementation (HTML/CSS/JS, WordPress, or static)</li>
+        <li>Basic SEO &amp; analytics setup</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Social Media Setup &amp; Content Planning</h2>
+      <p>Launch or refresh your profiles and plan content that matches your brand and reaches your audience.</p>
+      <ul>
+        <li>Profile and page setup</li>
+        <li>30–60 day content calendar</li>
+        <li>Design templates and posting guidance</li>
+        <li>Community management basics</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>E‑commerce Store Setup</h2>
+      <p>End‑to‑end setup so you can start selling online—catalog, payments, shipping, taxes, and basic automations.</p>
+      <ul>
+        <li>Platform selection (e.g., Shopify, WooCommerce)</li>
+        <li>Product catalog and collections</li>
+        <li>Payment, shipping, and tax configuration</li>
+        <li>Order notifications and basic workflows</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Digital Consulting &amp; Analytics</h2>
+      <p>Advice on tools and workflows that fit your budget, plus dashboards that show what’s working.</p>
+      <ul>
+        <li>Tool selection &amp; setup</li>
+        <li>Google Analytics &amp; Search Console</li>
+        <li>Performance reviews &amp; recommendations</li>
+      </ul>
+    </div>
+  </div>
+  <div style="margin-top:1.5rem"><a class="btn" href="calendar.html">Book a free intro call</a></div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <strong>Mojo Consultants LLC</strong>
+    <div style="margin-top:.25rem">Digital Branding &amp; IT Services — Illinois</div>
+    <div class="contact-inline">
+      <span>© <span id="year"></span> Mojo Consultants LLC</span>
+      <span>•</span>
+      <a href="calendar.html">Schedule a meeting</a>
+      <span>•</span>
+      <a href="mailto:MojoConsultantsLLC@gmail.com">Email us</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
