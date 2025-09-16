@@ -1,0 +1,46 @@
+# MojoConsultantsWeb
+
+[![CI](https://img.shields.io/github/actions/workflow/status/MojoConsultants/MojoConsultantsWeb/ci.yml?label=CI)](../../actions)
+[![Open issues](https://img.shields.io/github/issues/MojoConsultants/MojoConsultantsWeb)](../../issues)
+[![License](https://img.shields.io/github/license/MojoConsultants/MojoConsultantsWeb)](./LICENSE)
+[![Conventional Commits](https://img.shields.io/badge/commits-conventional-ff69b4.svg)](https://www.conventionalcommits.org/)
+[![Security](https://img.shields.io/badge/security-shift--left-green)](#-security--compliance)
+
+A modern web app by **Mojo Consultants**. This repo contains the public website and related UI components.
+
+---
+
+## ✨ Features
+
+- Fast, accessible, responsive UI
+- Component-driven architecture
+- CI-ready with tests, lint, type checks
+- Security-first defaults (secret scanning, SAST, dependency audit)
+
+> Tech stack is framework-agnostic in this README. If you’re using React/Next.js, Vite, Vue, or Svelte, update the commands below accordingly.
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1) Clone
+git clone https://github.com/MojoConsultants/MojoConsultantsWeb.git
+cd MojoConsultantsWeb
+
+# 2) Install
+# Choose one:
+npm install
+# or
+yarn
+# or
+pnpm install
+
+# 3) Run dev server
+npm run dev
+
+# 4) Build for production
+npm run build
+
+# 5) Preview production build
+npm run preview
