@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" type="image/x-icon" href="/favicon.png"> // Favicon for browser tab  added. 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mojo Consultants — Digital Branding & IT Services</title>
+<link rel="preload" as="image" href="Logo.png" />
+<link rel="stylesheet" href="styles.css" />
+<meta name="theme-color" content="#0b5aa3" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Mojo Consultants home">
+      <img src="Logo.png" alt="Mojo Consultants logo" />
+      <span class="name">MOJO CONSULTANTS</span>
+    </a>
+    
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="cta">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="contract.html">Contract</a></li>
+         <li><a href="customers.html">Contract</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+
+<section class="hero container">
+  <div>
+    <p class="tag">we make things Awesome!!!</p>
+    <h1>Digital branding &amp; IT services for small businesses</h1>
+    <p class="kicker">We design websites, set up e‑commerce, and craft social media strategies so your business looks great and grows online.</p>
+    <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+      <a class="btn" href="calendar.html">Book a meeting</a>
+      <a class="btn" style="background:var(--brand)" href="services.html">Explore services</a>
+    </div>
+  </div>
+  <div class="card"><img src="Logo.png" alt="Mojo Consultants brand mark" /></div>
+</section>
+
+<section class="container">
+  <div class="grid cols-3">
+    <div class="card"><h3>Websites</h3><p>Modern, mobile‑friendly websites built for speed, accessibility, and easy updates.</p></div>
+    <div class="card"><h3>Social Media</h3><p>Profile setup and content planning to grow your audience with purpose.</p></div>
+    <div class="card"><h3>E‑commerce</h3><p>Store setup, payments, and analytics so you can sell online with confidence.</p></div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <strong>Mojo Consultants LLC</strong>
+    <div style="margin-top:.25rem">Digital Branding &amp; IT Services — Illinois</div>
+    <div class="contact-inline">
+      <span>© <span id="year"></span> Mojo Consultants LLC</span>
+      <span>•</span>
+      <a href="calendar.html">Schedule a meeting</a>
+      <span>•</span>
+      <a href="mailto:MojoConsultantsLLC@gmail.com">Email us</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

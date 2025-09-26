@@ -1,0 +1,5 @@
+/* ai.css */
+:root { --accent: #0b5aa3; --ink: #1b2a3a; }
+.hero { background: #f9fafb; border: 1px solid #eef2f6; border-radius: 12px; padding: 1.25rem; }
+.step img { box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+code { background: #f3f6f9; padding: .1rem .3rem; border-radius: 4px; }

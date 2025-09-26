@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Incident Response — Mojo Park</title>
+<link rel="stylesheet" href="styles.css" />
+<meta name="theme-color" content="#0b5aa3" />
+<style>
+  /* breadcrumb + helpers (in case styles.css lacks them) */
+  .breadcrumb {font-size:.9rem; color:#567; margin:.75rem 0}
+  .breadcrumb a {color:#0b5aa3; text-decoration:none}
+  .breadcrumb .sep {opacity:.5; margin:0 .35rem}
+  .btn {display:inline-block;background:#0b5aa3;color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+  .btn.secondary {background:#0e7bd1}
+  .grid.cols-3 {display:grid; grid-template-columns:1fr; gap:1rem}
+  @media(min-width:900px){ .grid.cols-3 {grid-template-columns:repeat(3, 1fr)} }
+  .card.linked h2 a { text-decoration:none; color:inherit }
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Mojo Consultants home">
+      <img src="Logo.png" alt="Mojo Consultants logo" />
+      <span class="name">MOJO CONSULTANTS</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="cta">Services</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="contract.html">Contract</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="services.html">Services</a><span class="sep">/</span><a href="cybersecurity.html">Cybersecurity</a><span class="sep">/</span><span aria-current="page">Incident Response</span></nav>
+</section>
+<main class="container">
+  <h1>Incident Response</h1>
+  <p>We maintain ready-to-run playbooks for auth breaches, PII exposure, and DDoS. Each playbook includes roles, comms templates, legal paths, and post-incident hardening steps.</p>
+<ul>
+  <li>On-call rotation and escalation paths</li>
+  <li>Runbooks with containment, eradication, recovery</li>
+  <li>Tabletop exercises and metrics (MTTD/MTTR)</li>
+</ul>
+<p><a class="btn" href="cybersecurity.html">Back to Cybersecurity</a></p>
+</main>
+<footer>
+  <div class="container">
+    <strong>Mojo Consultants LLC</strong>
+    <div style="margin-top:.25rem">Digital Branding &amp; IT Services — Illinois</div>
+    <div class="contact-inline">
+      <span>&copy; <span id="year"></span> Mojo Consultants LLC</span>
+      <span>&bull;</span>
+      <a href="calendar.html">Schedule a meeting</a>
+      <span>&bull;</span>
+      <a href="mailto:MojoConsultantsLLC@gmail.com">Email us</a>
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+</body></html>

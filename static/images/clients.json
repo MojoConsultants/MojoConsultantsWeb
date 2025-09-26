@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Bees Barber Shop",
+    "sector": "Local Services",
+    "logoKey": "beesbarber"
+  },
+  {
+    "name": "Sunrise Bakery",
+    "sector": "Retail & Food",
+    "logoKey": "beesbarber"
+  },
+  {
+    "name": "GreenLeaf Landscaping",
+    "sector": "Home & Garden",
+    "logoKey": "beesbarber"
+  },
+  {
+    "name": "BluePeak Fitness",
+    "sector": "Health & Wellness",
+    "logoKey": "beesbarber"
+  },
+  {
+    "name": "RiverTech IT",
+    "sector": "Technology",
+    "logoKey": "beesbarber"
+  },
+  {
+    "name": "Urban Crafts",
+    "sector": "Artisanal Retail",
+    "logoKey": "beesbarber"
+  }
+]

@@ -1,0 +1,5 @@
+/* cybersecurity.css */
+:root { --accent: #0b5aa3; --ink: #1b2a3a; }
+.hero { background: #f2f7fc; border: 1px solid #e3eef9; border-radius: 12px; padding: 1.25rem; }
+.card h2, .card h3 { color: var(--accent); }
+.note { background: #f7fbff; border-left: 4px solid var(--accent); }
