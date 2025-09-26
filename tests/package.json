@@ -1,0 +1,17 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "A generic Node.js package",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "minify": "npx terser ../web.js -o ../web.min.js",
+        "copy": "cp -R ../*.html ../dist/ && cp -R ../*.css ../dist/",
+        "test": "playwright test",
+        "build": "npm run minify && npm run copy && npm test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {}
+}

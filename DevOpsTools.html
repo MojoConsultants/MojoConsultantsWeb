@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mojo Consultants — DevOps Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Mojo Consultants home">
+      <img src="Logo.png" alt="Mojo Consultants logo" />
+      <span class="name">MOJO CONSULTANTS</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="cta">Services</a></li>
+        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="ai.html">AI/ML</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="about">
+    <h1>DevOps Tools Periodic Table</h1>
+    <p>Explore a curated selection of essential DevOps tools used in software development, infrastructure automation, monitoring, CI/CD, and more.</p>
+
+    <div class="grid‑periodic">
+      <div class="element" title="Git">Gt<br/><small>Git</small></div>
+      <div class="element" title="GitHub">Gh<br/><small>GitHub</small></div>
+      <div class="element" title="GitLab">Gl<br/><small>GitLab</small></div>
+      <div class="element" title="Bitbucket">Bb<br/><small>Bitbucket</small></div>
+
+      <div class="element" title="Jenkins">Jn<br/><small>Jenkins</small></div>
+      <div class="element" title="CircleCI">Cr<br/><small>CircleCI</small></div>
+      <div class="element" title="Azure DevOps">Az<br/><small>Azure</small></div>
+      <div class="element" title="TeamCity">Tc<br/><small>TeamCity</small></div>
+
+      <div class="element" title="Terraform">Tf<br/><small>Terraform</small></div>
+      <div class="element" title="Ansible">An<br/><small>Ansible</small></div>
+      <div class="element" title="Docker">Dk<br/><small>Docker</small></div>
+      <div class="element" title="Kubernetes">Kb<br/><small>Kubernetes</small></div>
+
+      <div class="element" title="Selenium">Se<br/><small>Selenium</small></div>
+      <div class="element" title="JUnit">Jt<br/><small>JUnit</small></div>
+      <div class="element" title="Cucumber">Cu<br/><small>Cucumber</small></div>
+      <div class="element" title="JMeter">Jm<br/><small>JMeter</small></div>
+
+      <div class="element" title="Prometheus">Pr<br/><small>Prometheus</small></div>
+      <div class="element" title="Grafana">Gr<br/><small>Grafana</small></div>
+      <div class="element" title="AppDynamics">Ad<br/><small>AppDynamics</small></div>
+      <div class="element" title="Splunk">Sp<br/><small>Splunk</small></div>
+    </div>
+
+    <div class="legend">
+      <h3>Tool Categories</h3>
+      <ul>
+        <li><strong>SCM:</strong> Git, GitHub, GitLab, Bitbucket</li>
+        <li><strong>CI/CD:</strong> Jenkins, Azure, CircleCI, TeamCity</li>
+        <li><strong>IaC:</strong> Terraform, Ansible</li>
+        <li><strong>Containers:</strong> Docker, Kubernetes</li>
+        <li><strong>Testing:</strong> Selenium, JUnit, Cucumber, JMeter</li>
+        <li><strong>Monitoring:</strong> Prometheus, Grafana, AppDynamics, Splunk</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>Mojo Consultants LLC</strong>
+    <div style="margin-top:.25rem">Digital Branding &amp; IT Services — Illinois</div>
+    <div class="contact-inline">
+      <span>© <span id="year"></span> Mojo Consultants LLC</span>
+      <span>•</span>
+      <a href="calendar.html">Schedule a meeting</a>
+      <span>•</span>
+      <a href="mailto:MojoConsultantsLLC@gmail.com">Email us</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

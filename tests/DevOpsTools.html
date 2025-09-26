@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device‑width, initial-scale=1.0" />
+  <title>Mojo Consultants | DevOps Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="Logo.png" alt="Mojo Consultants Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="DevOpsTools.html">DevOps Tools</a></li>
+          <li><a href="TechStack.html">Tech Stack</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="devops‑tools">
+      <div class="container">
+        <h1>DevOps Periodic Table</h1>
+        <p>Explore the tools and categories we use at Mojo Consultants.</p>
+
+        <div id="periodicGrid" class="grid‑periodic">
+          <!-- Example grid items; add or remove as needed -->
+          <div class="element" data-category="CI/CD" title="GitHub Actions • Jenkins">GH‑A</div>
+          <div class="element" data-category="Containerization" title="Docker">DOCK</div>
+          <div class="element" data-category="Orchestration" title="Kubernetes">K8S</div>
+          <div class="element" data-category="Infrastructure as Code" title="Terraform">TF</div>
+          <div class="element" data-category="GitOps" title="ArgoCD">ARGO</div>
+          <div class="element" data-category="Monitoring / Observability" title="Prometheus">PROM</div>
+          <div class="element" data-category="Configuration Management" title="Ansible">ANSB</div>
+          <div class="element" data-category="CI/CD / Pipelines" title="GitLab CI">GL‑CI</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mojo Consultants. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JS for tooltips or interactivity
+    document.querySelectorAll('.element').forEach(el => {
+      el.addEventListener('mouseover', () => {
+        const title = el.getAttribute('title');
+        if (title) {
+          // Simple tooltip: set as data attribute or custom
+          el.setAttribute('data-oldtitle', title);
+          el.removeAttribute('title');
+          const tooltip = document.createElement('div');
+          tooltip.className = 'tooltip';
+          tooltip.innerText = title;
+          document.body.appendChild(tooltip);
+          const rect = el.getBoundingClientRect();
+          tooltip.style.left = (rect.left + window.scrollX) + 'px';
+          tooltip.style.top = (rect.bottom + window.scrollY + 5) + 'px';
+          el._tooltip = tooltip;
+        }
+      });
+      el.addEventListener('mouseout', () => {
+        if (el._tooltip) {
+          el.setAttribute('title', el.getAttribute('data-oldtitle'));
+          document.body.removeChild(el._tooltip);
+          el._tooltip = null;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+<!-- DevOps Tools Page for Mojo Consultants -->     
+
+

@@ -1,0 +1,6 @@
+// ...existing code...
+"scripts": {
+  "test": "playwright test",
+  "build": "your-build-command && npm test"
+}
+// ...existing code...

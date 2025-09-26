@@ -1,40 +1,163 @@
-:root{
-  --brand:#0b5aa3;
-  --brand-2:#2ca24c;
-  --accent:#f28a00;
-  --ink:#0f172a;
-  --muted:#475569;
-  --bg:#ffffff;
+/* Global Reset and Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:var(--ink);background:var(--bg)}
-a{color:var(--brand)}
-img{max-width:100%;height:auto}
-.container{max-width:1100px;margin:0 auto;padding:0 1rem}
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:10}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0}
-.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-.brand img{width:48px;height:48px;border-radius:.5rem}
-.brand .name{font-weight:800;letter-spacing:.2px;color:var(--brand)}
-nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
-nav a{display:inline-block;padding:.5rem .75rem;border-radius:.5rem;text-decoration:none;color:var(--ink);font-weight:600}
-nav a:hover, nav a:focus{background:#f1f5f9;outline:none}
-.cta{background:var(--brand);color:#fff}
-.cta:hover{background:#0a4c89}
 
-section{padding:3rem 0}
-h1{font-size:clamp(1.75rem,3.8vw,3rem);line-height:1.2;margin:.25rem 0}
-h2{font-size:clamp(1.45rem,2.6vw,2rem);margin:0 0 1rem}
-.hero{padding:3.5rem 0;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
-.tag{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-.kicker{color:var(--muted)}
-.btn{display:inline-block;margin-top:1rem;background:var(--accent);color:#fff;border:none;padding:.9rem 1.1rem;border-radius:.75rem;font-weight:700;text-decoration:none}
-.btn:hover{filter:brightness(.95)}
-.card{border:1px solid #e5e7eb;border-radius:1rem;padding:1.25rem;box-shadow:0 6px 24px rgba(2,6,23,.06)}
-.grid{display:grid;gap:1rem}
-@media(min-width:800px){ .grid.cols-2{grid-template-columns:repeat(2,1fr)} .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
-footer{border-top:1px solid #e5e7eb;background:#fafafa;padding:2rem 0;color:#334155}
-.contact-card label{font-weight:600}
-.contact-card input,.contact-card textarea{width:100%;padding:.8rem;border:1px solid #cbd5e1;border-radius:.75rem}
-.contact-card textarea{min-height:120px}
-.contact-inline{display:flex;flex-wrap:wrap;gap:1rem;margin-top:.75rem;color:var(--muted)}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+a {
+  color: #0b5aa3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  background: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+}
+
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.brand img {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: #e0f7fa;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.hero .tag {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0b5aa3;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.hero .kicker {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #0b5aa3;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #094882;
+}
+
+/* About & Section Content */
+.about, section {
+  padding: 2rem 0;
+}
+
+.about h2, section h1, section h2 {
+  margin-bottom: 1rem;
+  color: #0b5aa3;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-inline {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-inline span {
+  margin: 0 0.5rem;
+}
+
+/* Grid Periodic Table */
+.grid‑periodic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.element {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.element small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.85rem;
+  marg

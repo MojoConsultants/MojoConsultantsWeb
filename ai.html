@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Image Tutorial — Mojo Consultants</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="ai.css" />
+<meta name="theme-color" content="#0b5aa3" />
+<meta property="og:title" content="AI Image Tutorial — Mojo Consultants" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="ai.html" />
+<meta property="og:image" content="Logo.png" />
+
+<meta name="description" content="Visual guide to creating images with AI."/>
+<style>
+  /* breadcrumb + helpers (in case styles.css lacks them) */
+  .breadcrumb {font-size:.9rem; color:#567; margin:.75rem 0}
+  .breadcrumb a {color:#0b5aa3; text-decoration:none}
+  .breadcrumb .sep {opacity:.5; margin:0 .35rem}
+  .btn {display:inline-block;background:#0b5aa3;color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+  .btn.secondary {background:#0e7bd1}
+  .grid.cols-3 {display:grid; grid-template-columns:1fr; gap:1rem}
+  @media(min-width:900px){ .grid.cols-3 {grid-template-columns:repeat(3, 1fr)} }
+  .card.linked h2 a { text-decoration:none; color:inherit }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Mojo Consultants home">
+      <img src="Logo.png" alt="Mojo Consultants logo" />
+      <span class="name">MOJO CONSULTANTS</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="cta">Services</a></li>
+        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="ai.html">AI/ML</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="contract.html">Contract</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="services.html">Services</a><span class="sep">/</span><span aria-current="page">AI / ML</span></nav>
+</section>
+
+<header>
+  <div class="container">
+    <strong>AI Image Tutorial</strong>
+    <div class="kicker">Prompt, iterate, style, export - a quick, visual guide.</div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Create Great Images with AI</h1>
+    <p>Use this tutorial with your preferred tool (e.g., DALL·E, Stable Diffusion, Midjourney, or Canva's AI). Follow the four steps below.</p>
+    <a class="btn" href="index.html">Back to site</a>
+  </section>
+
+  <section class="grid">
+    <div class="card step">
+      <h2>1) Prompting Basics</h2>
+      <img src="ai_tutorial/01_prompting_basics.png" alt="Prompting basics panel" />
+      <p>Template: <code>[subject], [style], [details], [lighting], [composition]</code>.</p>
+    </div>
+
+    <div class="card step">
+      <h2>2) Iterate & Refine</h2>
+      <img src="ai_tutorial/02_iterate_refine.png" alt="Iterate and refine panel" />
+      <p>Generate variants, pick the best, and refine. Use negative prompts to steer away from undesired elements.</p>
+    </div>
+
+    <div class="card step">
+      <h2>3) Styles & Controls</h2>
+      <img src="ai_tutorial/03_styles_controls.png" alt="Styles and controls panel" />
+      <p>Experiment with styles and image-to-image. Adjust guidance/strength to balance creativity vs. control.</p>
+    </div>
+
+    <div class="card step">
+      <h2>4) Export & Share</h2>
+      <img src="ai_tutorial/04_export_share.png" alt="Export and share panel" />
+      <p>Export as PNG for print or JPG for web. Add alt text and version your assets for teamwork.</p>
+    </div>
+  </section>
+
+  <section class="container" style="margin-top:1rem">
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Go deeper</h3>
+        <p>Learn how we deploy and operate AI:</p>
+        <p>
+          <a class="btn secondary" href="rag.html">RAG &amp; Chatbots</a>
+          <a class="btn secondary" href="mlops.html">MLOps &amp; Monitoring</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© Mojo Consultants LLC</div>
+</footer>
+</body>
+</html>
